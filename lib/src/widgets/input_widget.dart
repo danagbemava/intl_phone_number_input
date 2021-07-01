@@ -235,7 +235,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
           if (widget.onInputChanged != null) {
             widget.onInputChanged!(PhoneNumber(
                 phoneNumber: phoneNumber,
-                isoCode: this.country?.alpha2Code,
+                isoCode: this.country?.alpha3Code,
                 dialCode: this.country?.dialCode));
           }
 
@@ -247,7 +247,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
           if (widget.onInputChanged != null) {
             widget.onInputChanged!(PhoneNumber(
                 phoneNumber: phoneNumber,
-                isoCode: this.country?.alpha2Code,
+                isoCode: this.country?.alpha3Code,
                 dialCode: this.country?.dialCode));
           }
 
@@ -353,7 +353,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
       widget.onSaved?.call(
         PhoneNumber(
             phoneNumber: phoneNumber,
-            isoCode: this.country?.alpha2Code,
+            isoCode: this.country?.alpha3Code,
             dialCode: this.country?.dialCode),
       );
     }
